@@ -11,12 +11,7 @@
 
 (setq make-backup-files nil)
 (setq auto-save-default nil)
-
 (setq default-tab-width 2)
-(setq column-number-mode t)
-(setq line-number-mode t)
-(setq column-number-mode t)
-(setq display-battery-mode t)
 
 ;; install config dependencies
 (load-file

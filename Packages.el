@@ -141,6 +141,10 @@
 					docker
 					dockerfile-mode
 
+					;; modeline
+					smart-mode-line
+					rich-minority
+
 					;; Additional utilities
 					ac-company
 					ace-window
@@ -150,7 +154,6 @@
 					free-keys
 					iregister
 					rainbow-mode
-					smart-mode-line
 					smartparens
 					tail
 					undo-tree
