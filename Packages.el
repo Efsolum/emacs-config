@@ -59,7 +59,7 @@
 					;; themes
 					color-theme
 					helm-themes
-					;; zonokai-theme
+					birds-of-paradise-plus-theme
 
 					;; help, discovery & learning
 					discover
