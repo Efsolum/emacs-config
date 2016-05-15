@@ -1,8 +1,8 @@
-(add-to-list 'load-path "~/.emacs.d/el-get/el-get")
-
 (unless (executable-find "guix")
+	(add-to-list 'load-path "~/.emacs.d/el-get/el-get")
+
 	(unless
-			(require 'el-get nil 'noerror)
+			(require 'el-get nil 't)
 
 		(require 'package)
 		(add-to-list 'package-archives
@@ -10,13 +10,18 @@
 
 		(package-refresh-contents)
 		(package-initialize)
-		(package-install 'el-get))
+		(package-install 'el-get)
+		(require 'el-get))
 
-	(require 'el-get)
 	(add-to-list 'el-get-recipe-path "~/.emacs.d/el-get-user/recipes")
+	(el-get 'sync)
+
+	;; (unload-feature 'el-get)
+	;; (require 'el-get)
 
 	(setq package-list
 				'(;; general utilities
+					el-get
 					ac-helm
 					apt-utils
 					auto-complete
@@ -160,4 +165,5 @@
 					undo-tree
 					zoom-window))
 
+	(add-to-list 'el-get-recipe-path "~/.emacs.d/el-get-user/recipes")
 	(el-get 'sync package-list))
