@@ -10,7 +10,8 @@
 	(setq sml/shorten-directory t)
 	(setq sml/shorten-modes t)
 	(sml/setup)
-	(sml/apply-theme 'dark)
+	(sml/apply-theme 'respectful)
+	;; (sml/apply-theme 'light-powerline)
 
 	(when (require 'rich-minority)
 		(rich-minority-mode 1)))

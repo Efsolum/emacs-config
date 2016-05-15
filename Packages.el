@@ -144,6 +144,7 @@
 					;; modeline
 					smart-mode-line
 					rich-minority
+					powerline
 
 					;; Additional utilities
 					ac-company
