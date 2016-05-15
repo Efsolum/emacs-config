@@ -17,15 +17,34 @@
 
 	(setq package-list
 				'(;; general utilities
+					ac-helm
+					apt-utils
 					auto-complete
 					flycheck
 					flymake
 					helm
-					ac-helm
 					helm-projectile
 					magit
+					magit-tramp
+					magit-view-file
 					projectile
+					tramp
 					yasnippet
+					yasnippet-snippets
+					yasnippets
+
+					;; shell & terminal
+					emux
+					exec-path-from-shell
+					multi-term
+					sane-term
+					term+
+
+					;; Org mode
+					org-mode
+					org-ac
+					org-bullets
+					;; org-grep
 
 					;; mail
 					;; mu4e
@@ -39,23 +58,31 @@
 
 					;; themes
 					color-theme
+					helm-themes
 					;; zonokai-theme
 
 					;; help, discovery & learning
 					discover
 					guide-key
+					discover-my-major
 
 					;; standard formats
+					;; auctex
+					auto-complete-auctex
 					csv-mode
 					json-mode
 					markdown-mode
 					web-mode
+					ac-html
 					yaml-mode
+					sml-mode
+					systemd-mode
 
 					;; Lisp families
 					geiser
 					ac-geiser
 					clojure-mode
+					clojure-snippets
 					slime
 					ac-slime
 					helm-slime
@@ -71,18 +98,28 @@
 
 					;; Lua
 					lua-mode
+					flymake-lua
 
 					;; Python
 					jinja2-mode
 					python
+					ac-python
+					anaconda-mode
 
 					;; Ruby
 					enh-ruby-mode
+					flymake-ruby
 					yard-mode
 					haml-mode
 					slim-mode
+					rdoc-mode
+
+					;; Css
+					css-mode
 					sass-mode
 					scss-mode
+					flymake-css
+					helm-css-scss
 
 					;;Javascript
 					js2-mode
@@ -92,19 +129,31 @@
 					handlebars-mode
 					;; ember-mode
 					coffee-mode
+					flymake-coffee
 
 					;; dired
 					dired+
+					dired-details
+					dired-details+
 					direx
 
+					;; Docker
+					docker
+					dockerfile-mode
+
 					;; Additional utilities
-					iregister
+					ac-company
 					ace-window
 					aggressive-indent-mode
-					expand-region
-					undo-tree
 					browse-kill-ring
+					expand-region
+					free-keys
+					iregister
+					rainbow-mode
 					smart-mode-line
-					smartparens))
+					smartparens
+					tail
+					undo-tree
+					zoom-window))
 
 	(el-get 'sync package-list))
