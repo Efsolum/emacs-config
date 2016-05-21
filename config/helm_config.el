@@ -1,3 +1,10 @@
+(let* ((guix-path "/.guix-profile/share/emacs")
+			(dir-to-load
+			 (concat
+				(getenv "HOME") guix-path "/site-lisp/guix.d/helm-1.9.4")))
+	(when
+			(file-accessible-directory-p dir-to-load)
+		(add-to-list 'load-path dir-to-load)))
 
 (when
 		(require 'helm nil 'noerror)
