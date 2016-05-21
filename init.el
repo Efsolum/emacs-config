@@ -13,6 +13,9 @@
 (setq auto-save-default nil)
 (setq default-tab-width 2)
 
+;; set font size
+(set-face-attribute 'default nil :height 80)
+
 ;; install config dependencies
 (load-file
  (expand-file-name "Packages.el" user-emacs-directory))
