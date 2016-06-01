@@ -13,6 +13,9 @@
 (setq auto-save-default nil)
 (setq default-tab-width 2)
 
+;; configure man-mode to open in the same window.
+(setq Man-notify-method 'pushy)
+
 ;; set font size
 (set-face-attribute 'default nil :height 80)
 
