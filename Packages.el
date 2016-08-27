@@ -60,8 +60,6 @@
 					discover-my-major
 
 					;; standard formats
-					auctex
-					auto-complete-auctex
 					csv-mode
 					json-mode
 					markdown-mode
