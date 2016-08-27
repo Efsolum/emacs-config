@@ -155,4 +155,9 @@
 					zoom-window))
 
 	(add-to-list 'el-get-recipe-path "~/.emacs.d/el-get-user/recipes")
-	(el-get 'sync package-list))
+	(el-get 'sync package-list)
+
+	(setq package-list-elpa
+				'(emamux))
+
+	(el-get 'sync package-list-elpa))
