@@ -60,7 +60,7 @@
 					discover-my-major
 
 					;; standard formats
-					;; auctex
+					auctex
 					auto-complete-auctex
 					csv-mode
 					json-mode
@@ -70,6 +70,7 @@
 					yaml-mode
 					sml-mode
 					systemd-mode
+					crontab-mode
 
 					;; Lisp families
 					geiser
