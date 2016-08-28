@@ -38,3 +38,5 @@
 
 (recursive-load-directory
  (expand-file-name "config" user-emacs-directory))
+
+(require 'restclient nil 'noerror)

@@ -39,6 +39,10 @@
 					org-bullets
 					;; org-grep
 
+					;; REST API
+					restclient
+					restclient-helm
+
 					;; mail
 					;; mu4e
 					;; helm-mu
@@ -67,10 +71,15 @@
 					ac-html
 					yaml-mode
 					sml-mode
+
+					;; configs
 					systemd-mode
 					crontab-mode
+					apache-mode
+					nginx-mode
 
 					;; Lisp families
+					clj-mode
 					geiser
 					ac-geiser
 					clojure-mode
@@ -78,7 +87,7 @@
 					slime
 					ac-slime
 					helm-slime
-					;; clojurescript-mode
+					clojurescript-mode
 					cider
 					ac-cider
 
@@ -122,6 +131,10 @@
 					;; ember-mode
 					coffee-mode
 					flymake-coffee
+
+					;; php
+					ac-php
+					php-mode
 
 					;; dired
 					dired+
