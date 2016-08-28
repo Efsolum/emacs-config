@@ -1,8 +1,9 @@
-
-(if (display-graphic-p)
-    (progn
-      (tool-bar-mode -1)
-      (scroll-bar-mode -1)))
+(defun set-up-gui (_)
+	(if (display-graphic-p)
+			(progn
+				(tool-bar-mode -1)
+				(scroll-bar-mode -1))))
+(add-to-list 'after-make-frame-functions #'set-up-gui)
 
 (menu-bar-mode -1)
 (tooltip-mode -1)
