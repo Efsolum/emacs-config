@@ -39,10 +39,6 @@
 					org-bullets
 					;; org-grep
 
-					;; REST API
-					restclient
-					restclient-helm
-
 					;; mail
 					;; mu4e
 					;; helm-mu
@@ -78,16 +74,14 @@
 					apache-mode
 					nginx-mode
 
-					;; Lisp families
-					clj-mode
+					;; Lisp families					
 					geiser
 					ac-geiser
 					clojure-mode
 					clojure-snippets
 					slime
 					ac-slime
-					helm-slime
-					clojurescript-mode
+					helm-slime				 
 					cider
 					ac-cider
 
@@ -127,8 +121,7 @@
 					ac-js2
 					js3-mode
 					jade-mode
-					handlebars-mode
-					;; ember-mode
+					handlebars-mode					
 					coffee-mode
 					flymake-coffee
 
@@ -169,6 +162,10 @@
 	(el-get 'sync package-list)
 
 	(setq package-list-elpa
-				'(emamux))
+				'(emamux
+					restclient
+					ember-mode
+					clojurescript-mode
+					clj-mode))
 
 	(el-get 'sync package-list-elpa))
